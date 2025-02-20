@@ -52,9 +52,9 @@
     <!-- Header -->
     <header class="header">
       <!-- Hero -->
-      <div class="hero text-white pt-6">
+      <div class="hero text-white pt-7 pb-4">
         <div class="container-xl">
-          <div class="row py-4">
+          <div class="row">
             <div class="col-12">
               <h1>Contact Information</h1>
             </div>
@@ -84,52 +84,58 @@
       </svg>
     </header>
 
-    <!-- Input form  -->
-
-    <section class="contact my-2">
+    <!-- Contact Form -->
+    <section class="contact bg-light pb-4">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                name="name"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control form-control-lg"
-                name="email"
-                placeholder="Email Address"
-              />
-            </div>
-            <textarea
-              class="form-control form-control-lg mb-3"
-              name="message"
-              rows="6"
-              placeholder="Message"
-            ></textarea>
-            <div class="d-grid">
-              <button class="btn btn-primary text-white mt-3">Submit</button>
-            </div>
+            <form action="https://formspree.io/f/mrgvnzvq" method="POST">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control form-control-lg"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary text-white mt-3">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="map py-6">
+    <!-- Map -->
+    <section class="location my-5">
       <div class="container">
         <div class="row">
           <div class="col-10 offset-1">
             <h3>Our Location</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequuntur nisi culpa perspiciatis aut nihil dolorem unde
-              adipisci voluptates pariatur similique quo earum, quos ipsam quod
-              in, nesciunt sapiente maiores quasi.
+            <p class="mb-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+              deserunt recusandae iure officiis quia saepe at velit ad eum
+              tenetur magnam, nihil voluptate sit totam ut reiciendis iusto
+              harum doloribus.
             </p>
             <div class="map">
               <iframe
@@ -142,8 +148,8 @@
       </div>
     </section>
 
-    <!-- Socials  -->
-    <section class="socials text-bg-dark overflow-hidden py-7">
+    <!-- Social -->
+    <section class="social text-bg-dark py-6 overflow-hidden">
       <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-3 text-center fs-4">
@@ -163,34 +169,33 @@
       </div>
     </section>
 
-    <!-- footer  -->
-
-    <footer class="footer border-top border-primary text-bg-dark py-4">
+    <!-- Footer -->
+    <footer class="border-top border-primary bg-dark text-white py-4">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
             <ul class="nav">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link link-light">Home</a>
+                <a href="index.html" class="nav-link link-light">Home</a>
               </li>
               <li class="nav-item">
                 <a href="#details" class="nav-link link-light">Details</a>
               </li>
               <li class="nav-item">
-                <a href="./contact.html" class="nav-link link-light">Contact</a>
+                <a href="contact.html" class="nav-link link-light">Contact</a>
               </li>
             </ul>
           </div>
           <div class="col-md-4">
-            <p class="text-md-end d-none d-md-block">
-              Copyright &copy; Blog Mastery 2025
+            <p class="text-end d-none d-md-block">
+              Copyright &copy; Blog Mastery 2023
             </p>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
